@@ -1,0 +1,27 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Inconsolata', monospace;
+	font-weight: 400;
+
+
+	--titlebar-height: 40px;
+	--sidebar-width: 40px;
+	--icon-size: 25px;
+}
+
+// constants
+$primary-color: black;
+$secondary-color: darkgrey;
+
+@import './common.scss';
+
+// component imports
+@import './components/Titlebar.scss';
+@import './components/TitlebarDropdown.scss';
+@import './components/Sidebar.scss';
+
+// page imports
+@import './pages/Landing.scss';
+@import './pages/Error.scss';
+@import './pages/Auth.scss';

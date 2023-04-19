@@ -1,0 +1,54 @@
+.titlebar-dropdown {
+
+	& > .name {
+		font-size: 20px;
+		border-bottom: 2px solid transparent;
+		transition: all 100ms ease;
+		padding: 0px 20px;
+		padding-top: 10px;
+		cursor: pointer;
+		height: calc(var(--titlebar-height) - 10px);
+		
+		&:hover {
+			border-bottom: 2px solid black;
+			font-weight: 600;
+		
+			& > svg {
+				transform: translateY(-5px) scale(1.1);
+			}
+		}
+
+		& > svg {
+			width: calc(var(--icon-size) + 5px);
+			height: calc(var(--icon-size) + 5px);
+			transform: translateY(-5px);
+			transition: all 100ms ease;
+		}
+	}
+
+	& > .dropdown-container {
+		z-index: 2;
+		top: var(--titlebar-height);
+		padding: 10px 0px;
+		background: white;
+		border: 1px solid black;
+		min-width: 150px;
+		max-width: 300px;
+
+		& > .option {
+			padding: 5px 20px 5px 10px;
+			cursor: pointer;
+			transition: all 100ms ease;
+
+			&:hover {
+				font-weight: bolder;
+			}
+		}
+	}
+
+	& > .bg {
+		width: 100vw;
+		height: 100vh;
+		background: transparent;
+	}
+}

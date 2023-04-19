@@ -1,0 +1,40 @@
+.titlebar {
+	height: var(--titlebar-height);
+	width: 100vw;
+	color: black;
+	border-bottom: 1px solid #ccc;
+
+	& > .logo {
+		width: var(--icon-size);
+		height: var(--icon-size);
+		margin: 10px 7px 5px 7px;
+
+		& > svg {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			fill: black;
+		}
+	}
+
+	& > .options {
+
+		& > .option {
+			font-size: 20px;
+			border-bottom: 2px solid transparent;
+			transition: all 100ms ease;
+			padding: 0px 20px;
+			padding-top: 10px;
+			cursor: pointer;
+			
+			&:hover {
+				border-bottom: 2px solid rgba(0, 0, 0, 1);
+				font-weight: 600;
+			}
+		}
+	}
+
+	& > .user-options {
+		margin-right: 50px;
+	}
+}
